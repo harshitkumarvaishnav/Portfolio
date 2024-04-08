@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Website</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script
+      src="https://kit.fontawesome.com/1e8bda6841.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <!-- <li><a href="gallery.html">Visit Gallery</a></li> -->
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p id="profession">Web Designer</p>
+          <h1>Hi, I'm <span>Harshit</span><br />Kumar From Gajraula</h1>
+        </div>
+      </div>
+    </div>
+    <!------------------------------about----------------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              B. Tech (Information Technology) from CCS University, Meerut (UP).
+              I'm Final Year Under Graduate My interest lies in Cyber Security
+              and Web Designer. I always willing to like minded people for
+              constructive ideas . Seeking full time job opportunity as
+              penetration tester and will also do web designer.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Designer</span><br />Web app Designer</li>
+                <li><span>Wordpress</span><br />Website Making</li>
+                <li>
+                  <span>Cyber Security Expert</span><br />Analytics Websites and
+                  applications
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024 - Current</span><br />Founder of Ladder Future
+                  (FreeLance)
+                </li>
+                <li>
+                  <span>2024 - Current</span><br /> PHP Developer Intern at W2s Infotech
+                </li>
+                <li>
+                  <span>2023</span><br />Web Development Intern at Internpe
+                </li>
+                <li>
+                  <span>2023</span><br />Web Development Internship at Bharat
+                  Intern
+                </li>
+                <li><span>2022</span><br />JAVA Traniee at MSME Ramnagar.</li>
+                <li>
+                  <span>2022-2023</span><br />Cyber Security Traniee at IIIT
+                  Allahabad & TheTechUnique Academy
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023-Current</span><br />Training at Qspiders (Java Full
+                  Stack)
+                </li>
+                <li>
+                  <span>2020- Current</span><br />B.Tech From CCS University
+                </li>
+                <li><span>2023</span><br />UI/UX Trainig from LearnVern</li>
+                <li>
+                  <span>2022</span><br />Cyber Security at TheTechUnique Academy
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------Services--------------------------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              We specialize in creating dynamic websites using both WordPress
+              and Angular technology, catering to diverse client needs. Our
+              expertise in HTML, CSS, and coding ensures visually stunning and
+              user-friendly websites.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Our UI/UX design services focus on crafting captivating interfaces
+              using Canva, Figma, and Photoshop, ensuring seamless user
+              experiences from wireframing to final implementation.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>Content Creation and Data Visualization</h2>
+            <p>
+              We excel in creating engaging content and visually appealing data
+              presentations with Power BI, helping businesses derive valuable
+              insights and tell compelling stories with their data.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------portfolio------------------------------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>E-Commerce Design</h3>
+              <p>
+                This is E-commerce Web-Design by using HTML,CSS and JS.
+                <!-- Click Here for Check it now 👇 -->
+              </p>
+              <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Doctor Appointment Web Application</h3>
+              <p>
+                This is Doctor-Appointment website USing PHP Technology.
+                <!-- Click Here for Check it now 👇 -->
+              </p>
+              <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>YouTube-Clone</h3>
+              <p>
+                This is a YouTube Clone by using HTML, CSS and JS.
+                This is a my second Year Project.
+                <!-- Click Here for Check it now 👇 -->
+              </p>
+              <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+            </div> 
+          </div>
+            <div class="work">
+              <img src="images/hunger-harmoney.png" />
+              <div class="layer">
+                <h3>NGO-Web-Design</h3>
+                <p>
+                  NGO Web Design Using Figma, HTML, CSS and JavaScript
+                </p>
+                <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+              </div>
+          </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+      </div>
+    </div>
+    <!-- ------------------Contact------------------ -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              harshitkumar09747@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> +91 9084945558</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://github.com/harshitkumarvaishnav"
+                ><i class="fa-brands fa-github-square"></i
+              ></a>
+              <a href="https://www.instagram.com/harshit_k_vaishnav/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/harshit-ccsu/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/Resume_Harshit.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          <i class="fa-regular fa-copyright"></i>Copyright Portfolio
+          <i class="fa-solid fa-heart"></i>Made by Harshit Vaishnav
+        </p>
+      </div>
+
+      <!-----------------Back to top ----------->
+      <a href="#" id="back-to-top">Back to Top</a>
+
+       <!-- Link to Gallery Page -->
+    
+
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
